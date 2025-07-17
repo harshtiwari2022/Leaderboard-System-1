@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #0e0e10;
+  color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  text-align: center;
+  padding: 2rem;
+  max-width: 700px;
+  width: 100%;
+  background-color: #1a1a1d;
+  border-radius: 16px;
+  box-shadow: 0 0 20px rgba(255, 255, 255, 0.05);
+}
+
+h1 {
+  color: #ffcc00;
+  margin-bottom: 1rem;
+}
+
+.add-user,
+.last-points {
+  margin: 1rem 0;
+}
+
+.input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  margin-right: 10px;
+  font-size: 1rem;
+}
+
+.add-btn,
+.claim-btn {
+  padding: 10px 15px;
+  background-color: #ffcc00;
+  color: black;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.add-btn:hover,
+.claim-btn:hover {
+  background-color: #f1b800;
+}
+
+.dropdown {
+  padding: 10px;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+
+.leaderboard {
+  margin-top: 2rem;
+}
+
+table {
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+  border-collapse: collapse;
+}
+
+th,
+td {
+  padding: 12px;
+  border-bottom: 1px solid #444;
+}
+
+th {
+  color: #ffcc00;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 8px;
+  color: black;
+  font-weight: bold;
+  background-color: #ffcc00;
+}
+
+.badge-rank-1 {
+  background-color: gold;
+}
+
+.badge-rank-2 {
+  background-color: silver;
+}
+
+.badge-rank-3 {
+  background-color: #cd7f32;
+}
