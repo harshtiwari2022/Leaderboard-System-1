@@ -14,7 +14,7 @@ const App = () => {
 
   const fetchUsers = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/users");
+      const res = await axios.get("https://leaderboard-web-page.onrender.com/api/users");
       setUsers(res.data);
     } catch (error) {
       alert("Failed to fetch users.");
@@ -24,7 +24,7 @@ const App = () => {
 
   const fetchLeaderboard = async () => {
     try {
-      const res = await axios.get("http://localhost:5000/api/users/leaderboard");
+      const res = await axios.get("https://leaderboard-web-page.onrender.com/api/users/leaderboard");
       setLeaderboard(res.data);
     } catch (error) {
       alert("Failed to fetch leaderboard.");
@@ -41,7 +41,7 @@ const App = () => {
     if (!selectedUserId) return;
     setLoading(true);
     try {
-      const res = await axios.post("http://localhost:5000/api/users/claim", {
+      const res = await axios.post("https://leaderboard-web-page.onrender.com/api/users/claim", {
         userId: selectedUserId,
       });
       setLastPoints(res.data.points);
