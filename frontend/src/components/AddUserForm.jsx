@@ -9,7 +9,7 @@ const AddUserForm = ({ onAdd }) => {
     if (!name.trim()) return;
     setLoading(true);
     try {
-      await axios.post("http://localhost:5000/api/users", { name });
+      await axios.post("https://leaderboard-web-page.onrender.com/api/users", { name });
       setName("");
       onAdd();
     } catch (error) {
